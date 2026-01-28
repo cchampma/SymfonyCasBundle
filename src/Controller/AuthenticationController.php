@@ -24,7 +24,7 @@ class AuthenticationController extends AbstractController
         $casService->logout();
     }
 
-    private function removePathServiceFromLoginUrl($url, $service_name): string
+    private function removePathServiceFromLoginUrl(string $url, string $service_name): string
     {
         return substr($url, 0, (int) strpos($url, $service_name . '=') + strlen($service_name . '='));
     }

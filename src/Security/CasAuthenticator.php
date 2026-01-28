@@ -37,7 +37,7 @@ class CasAuthenticator extends AbstractAuthenticator implements AuthenticationEn
     /**
      * @inheritDoc
      */
-    public function start(Request $request, AuthenticationException $authException = null): Response
+    public function start(Request $request, ?AuthenticationException $authException = null): Response
     {
         // Get the complete CAS login URL from the phpCAS lib
         $login_url = $this->casService->getCasLoginUrl();

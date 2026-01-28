@@ -9,7 +9,7 @@ use Symfony\Contracts\EventDispatcher\Event;
 
 class CasAuthenticationFailureEvent extends Event
 {
-    const CAS_AUTH_EXCEPTION = 'univ_lorraine_symfony_cas.authentication_failure';
+    public const CAS_AUTH_EXCEPTION = 'univ_lorraine_symfony_cas.authentication_failure';
 
     private Request $request;
     private AuthenticationException $exception;

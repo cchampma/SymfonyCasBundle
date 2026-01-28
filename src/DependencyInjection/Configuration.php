@@ -7,9 +7,9 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 class Configuration implements ConfigurationInterface
 {
-    const CAS_VERSION_3_0 = '3.0';
-    const CAS_VERSION_2_0 = '2.0';
-    const CAS_VERSION_1_0 = '1.0';
+    public const CAS_VERSION_3_0 = '3.0';
+    public const CAS_VERSION_2_0 = '2.0';
+    public const CAS_VERSION_1_0 = '1.0';
     /**
      * {@inheritdoc}
      */
